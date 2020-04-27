@@ -1,4 +1,4 @@
-# Empezando con practica-microondas
+# Empezando con práctica-microondas
 
 ## Tabla de contenidos
 - [Empezando](#Empezando)
