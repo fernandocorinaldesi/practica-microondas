@@ -1,0 +1,19 @@
+
+@media screen and (max-width: 600px) {
+    /*--------------botones inferiores----------------*/
+    .bi {
+      height: 15%;
+    }
+    /*--------------botones superiores----------------*/
+    .bs {
+      width: 35%;
+      height: 30%;
+      font-size: 9px;
+      
+    }
+    /*--------------botones encendido----------------*/
+    .be {
+      height: 35%;
+    }
+  
+  }
