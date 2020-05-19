@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--css styles-->
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Practica-microondas</title>
-</head>
+  </head>
 
-<body>
-    <div class="contenedor-microondas abstract-flex">
-        <div class="microondas">
-            <div class="microondas-central">
-                <h6>PANASONIC</h6>
-            </div>
-            <div class="microondas-lateral">
-                <div class="marca">
-                    <h6>PANASONIC</h6>
-                </div>
-                <div class="visor abstract-flex">
-                    <div class="visor-contenido"></div>
-                </div>
-                <div class="contenedor-menu">
-                    <div class="botones-superiores abstract-flex">
-                        <button class="bs">fn1</button>
-                        <button class="bs">fn2</button>
-                        <button class="bs">fn3</button>
-                        <button class="bs">fn4</button>
-                        <button class="bs">fn5</button>
-                        <button class="bs">fn6</button>
-                    </div>
-                    <button class="boton-redondo">--|--</button>
-                    <div class="botones-inferiores abstract-flex">
-                        <button class="bi" dato-entrada="1">1</button>
-                        <button class="bi" dato-entrada="2">2</button>
-                        <button class="bi" dato-entrada="3">3</button>
-                        <button class="bi" dato-entrada="4">4</button>
-                        <button class="bi" dato-entrada="5">5</button>
-                        <button class="bi" dato-entrada="6">6</button>
-                        <button class="bi" dato-entrada="7">7</button>
-                        <button class="bi" dato-entrada="8">8</button>
-                        <button class="bi" dato-entrada="9">9</button>
-                        <button class="bi" dato-entrada="">*</button>
-                        <button class="bi" dato-entrada="0">0</button>
-                        <button class="bi" dato-entrada="">#</button>
-                    </div>
-                    <div class="botones-encendido abstract-flex">
-                        <button class="be" id="encender">on</button>
-                        <button class="be" id="apagar">op</button>
-                    </div>
-                </div>
-                <div class="tapa-baja">
-                </div>
-            </div>
+  <body>
+    <div class="contenedor-microondas">
+      <div class="microondas">
+        <div class="microondas-fondo" id="fondo">
+          <div class="microondas-frente">
+            <h6>PANASONIC</h6>
+            <div class="microondas-manija"></div>
+          </div>
         </div>
+        <div class="microondas-lateral">
+          <div class="marca">
+            <h6>PANASONIC</h6>
+          </div>
+          <div class="visor">
+            <div class="visor-container">
+              <div class="visor-contenido-up"></div>
+              <div class="visor-contenido"></div>
+              <div class="visor-contenido-down"></div>
+            </div>
+          </div>
+          <div class="contenedor-menu">
+            <div class="botones-superiores">
+              <button class="bs" id="prog">Prog</button>
+              <button class="bs">fn2</button>
+              <button class="bs">fn3</button>
+              <button class="bs">fn4</button>
+              <button class="bs">fn5</button>
+              <button class="bs">fn6</button>
+            </div>
+            <button class="boton-redondo">--|--</button>
+            <div class="botones-inferiores">
+              <button class="bi" dato-entrada="1">1</button>
+              <button class="bi" dato-entrada="2">2</button>
+              <button class="bi" dato-entrada="3">3</button>
+              <button class="bi" dato-entrada="4">4</button>
+              <button class="bi" dato-entrada="5">5</button>
+              <button class="bi" dato-entrada="6">6</button>
+              <button class="bi" dato-entrada="7">7</button>
+              <button class="bi" dato-entrada="8">8</button>
+              <button class="bi" dato-entrada="9">9</button>
+              <button class="bi" dato-entrada="">*</button>
+              <button class="bi" dato-entrada="0">0</button>
+              <button class="bi" dato-entrada="">#</button>
+            </div>
+            <div class="botones-encendido">
+              <button class="be" id="encender">on</button>
+              <button class="be" id="start">start</button>
+            </div>
+          </div>
+          <div class="tapa-baja"></div>
+        </div>
+      </div>
     </div>
 
     <!--javascript-->
     <script src="js/microondas.js"></script>
-</body>
-
+  </body>
 </html>
