@@ -1,0 +1,181 @@
+.contenedor-microondas {
+  @include flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(47, 20, 4, 1) 34%,
+    rgba(255, 255, 255, 1) 36%
+  );
+  position: absolute;
+  .microondas {
+    display: flex;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom: $negro 3px solid;
+    border-top: rgb(83, 79, 79) 10px solid;
+    width: 1050px;
+    height: 600px;
+    margin: auto;
+    background: linear-gradient(
+      90deg,
+      rgba(56, 57, 52, 1) 0%,
+      rgba(171, 161, 164, 1) 35%,
+      rgba(220, 220, 220, 1) 100%
+    );
+
+    .microondas-fondo {
+      width: 60%;
+      height: 70%;
+      background: white;
+      margin: auto;
+      border-radius: 20px;
+
+      .microondas-frente {
+        width: 100%;
+        height: 100%;
+        //background: rgb(45,49,53);
+        background: linear-gradient(
+          335deg,
+          rgba(91, 108, 126, 0.7) 55%,
+          rgba(148, 154, 151, 0.7) 100%
+        );
+        margin: auto;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        cursor: pointer;
+        transform-origin: bottom;
+        transition: all 0.5s ease-in-out;
+        .microondas-manija {
+          width: 90%;
+          height: 10%;
+          background: linear-gradient(
+            90deg,
+            rgba(56, 57, 52, 1) 0%,
+            rgba(171, 161, 164, 1) 35%,
+            rgba(220, 220, 220, 1) 100%
+          );
+          border-radius: 20px;
+          margin-bottom: 180px;
+        }
+        h6 {
+          color: rgb(221, 208, 208);
+          margin-right: 80%;
+        }
+      }
+    }
+    .microondas-lateral {
+      width: 20%;
+      height: 100%;
+      background-color: rgb(215, 215, 215);
+      border-left: $negro 2px solid;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .marca {
+        height: 10%;
+      }
+      .visor {
+        width: 80%;
+        height: 15%;
+        background-color: $negro;
+        .visor-container {
+          margin-top: 15px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .visor-contenido-up {
+            color: rgb(42, 207, 42);
+            font-size: 14px;
+          }
+          .visor-contenido {
+            color: rgb(42, 207, 42);
+            font-size: 14px;
+          }
+          .visor-contenido-down {
+            color: rgb(42, 207, 42);
+            font-size: 14px;
+          }
+        }
+      }
+      .contenedor-menu {
+        width: 75%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2px;
+        .boton-redondo {
+          border: double 1px transparent;
+          border-radius: 100%;
+          background-origin: border-box;
+          background-clip: content-box, border-box;
+          width: 50%;
+          height: 15%;
+          cursor: pointer;
+          margin-top: 3px;
+          margin-bottom: 10px;
+          transition: all 1.5s ease-in-out;
+        }
+        .botones-superiores {
+          @include flex;
+          width: 100%;
+          height: 25%;
+          .bs {
+            width: 30%;
+            height: 25%;
+            border-radius: 50%;
+            margin: 1px;
+            font-size: 12px;
+            @include botonhover;
+          }
+        }
+        .botones-inferiores {
+          @include flex;
+          width: 100%;
+          height: 35%;
+          .bi {
+            width: 31%;
+            height: 25%;
+            border-radius: 50%;
+            margin: 1px;
+            @include botonhover;
+          }
+        }
+        .botones-encendido {
+          @include flex;
+          width: 100%;
+          height: 20%;
+          .be {
+            width: 40%;
+            height: 37%;
+            border-radius: 25%;
+            margin: 2px;
+            font-size: 12px;
+            @include botonhover;
+          }
+        }
+      }
+      .tapa-baja {
+        width: 75%;
+        height: 10%;
+        border: rgb(65, 60, 60) 1px solid;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+}
+@keyframes rotate-s-loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

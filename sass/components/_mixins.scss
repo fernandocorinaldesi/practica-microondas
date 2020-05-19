@@ -1,0 +1,13 @@
+@mixin flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+@mixin botonhover{
+    &:hover{
+        background: #20cbff;
+        color: aliceblue;
+        cursor: pointer;
+    }
+}

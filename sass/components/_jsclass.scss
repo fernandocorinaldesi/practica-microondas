@@ -1,0 +1,45 @@
+/*-----------------clasea utlizadas por js-----------------*/
+:root {
+  --s-loader-wrapper-bg-color: rgb(98, 98, 98);
+  --s-loader-width: 15px;
+  --s-loader-height: var(--s-loader-width);
+  --s-loader-border-color-trans: rgb(98, 98, 98);
+  --s-loader-border-color-full: lime;
+}
+
+.boton-rotar{
+  transform: rotate(180deg);
+}
+.abrir-vidrio{
+  transform: translateZ(0px) translateX(0px) translateY(0px) rotateX(140deg);
+}
+.boton-rotar-borderstyle{
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(183, 232, 252),#20cbff);
+}
+.botones-borderstyle{
+  border :$botonborde 1px solid;
+  background: $blanco;
+}
+.fondo{
+  background: coral;
+  transition: background-color 10000ms linear;
+  border: #5dc0e7 1px solid;
+}
+
+.spinning-loader {
+  width: var(--s-loader-width);
+  height: var(--s-loader-height);
+  border: 5px solid var(--s-loader-border-color-trans);
+  border-left-color: var(--s-loader-border-color-full);
+  border-radius: 50%;
+  background: transparent;
+  animation-name: rotate-s-loader;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+
+
