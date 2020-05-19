@@ -38,4 +38,4 @@ sass --watch ejemplo.sass:ejemplo.css
 
 ### Progreso actual 
 
- ![](https://i.ibb.co/QCNgwgC/bandicam-2020-05-04-10-07-37-502.gif)
+ ![](https://i.ibb.co/vsKwGJg/micro.gif)
