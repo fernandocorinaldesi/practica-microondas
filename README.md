@@ -8,7 +8,7 @@
   - [Requerimientos](#Requerimientos)
   - [Instalación](#Instalación)
   - [Uso](#Uso)
-- [Progeso actual](#Progreso actual)
+- [Progreso actual](#Progreso-actual)
  
   
 
@@ -36,6 +36,6 @@ Con este código monitorearás el archivo ejemplo.sass y transpilará el código
 sass --watch ejemplo.sass:ejemplo.css
 
 
-### Progreso actual 
+### Progreso-actual 
 
  ![](https://i.ibb.co/vsKwGJg/micro.gif)
